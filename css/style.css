@@ -1,0 +1,362 @@
+
+:root{
+    --color-brown: rgba(248, 152, 26, 0.897);
+    --bg-blue: rgba(48, 146, 238, 0.514);
+
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*header and nav*/
+nav {
+    background-color: white;
+}
+nav .nav-links{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 2;
+
+}
+nav .nav-link{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+nav .nav-link span:last-of-type{
+    margin-top: 8px;
+    font-style: italic;
+
+}
+nav .nav-link span:first-of-type{
+    font-size: 22px;
+    font-style: oblique;
+
+}
+nav .Contact{
+    display: flex;
+    flex-direction: column;
+}
+nav .Contact .Phone{
+    margin-bottom: 8px;
+}
+.browm-link{
+    color: tomato;
+} 
+
+/* utility class */
+.container{
+    max-width: 80%;
+    margin: 0px auto;
+}
+.d-flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.v-align-center{
+    align-items: center;
+}
+nav .logo{
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--bg-blue);
+    padding: 15px 20px;
+}
+/*hero section*/
+section#hero-section {
+height: 80vh;
+}
+section#hero-section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    }
+
+
+/*main section*/
+section#what-we-offer {
+background-color: white;
+padding: 150px 0;
+}
+
+section#what-we-offer img {
+    width: 100%;
+    height: 100%;
+}
+
+.what-we-offer-content {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    
+}
+
+.what-we-offer-content .image {
+   height: 300px;
+    width: 300px;
+    border-radius: 400px;
+    overflow: hidden;
+}
+
+/* our story */
+
+.our-story-section {
+    display: flex;
+}
+#our-story-text,
+#our-story-image {
+    max-width: 50%;
+}
+#our-story-text {
+    background-color: var(--bg-blue);
+}
+#our-story-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.our-story-content {
+    margin-top: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.our-story-content .p1,
+.our-story-content .p2 {
+    margin-bottom: 15px;
+
+}
+
+/* restaurant */
+
+#restaurant {
+    background: white;
+    padding: 70px 0;
+}
+
+.restaurant-images {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.restaurant-images div {
+    max-width: 30%;
+    position: relative;
+}
+.restaurant-images div span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-size: 50px;
+
+}
+.restaurant-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Our Bread */
+#our-bread {
+    background: white;
+    padding: 120px 0;
+}
+
+
+.bread-images {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.bread-images .our-bread-img {
+    width: 22%;
+}
+.bread-images .our-bread-img img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.btn-primary {
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid var(--color-brown);
+    border-radius: 3px;
+    padding: 5px 30px;
+    color: var(--color-brown);
+    display: inline-block;
+}
+.btn-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.our-bread-info {
+    margin-top: 20px;
+    font-style: oblique;
+}
+.our-bread-info h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* subscribe */
+#subscribe {
+    height: 60vh;
+    overflow: hidden;
+}
+.news-letter-sections {
+    display: flex;
+}
+#news-letter-subscribe,
+#news-letter-image {
+    width: 50%;
+}
+#news-letter-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+#news-letter-subscribe {
+    background-color: whitesmoke;
+}
+    .news-letter-text {
+        line-height: 1.5;
+        text-align: justify;
+    }
+    #news-letter-form .input-group {
+        display: flex;
+        justify-content: center;
+    }
+    #news-letter-form input[type="email"] {
+        outline: none;
+        border: 1px solid var(--color-brown);
+        border-top-left-radius: 7px;
+        border-bottom-right-radius: 0px ;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 0px;
+        font-size: 16px;
+        padding: 18px 15px;
+    }
+    #news-letter-form input[type="submit"] {
+        padding: 10px;
+        display: inline-block;
+        outline: none;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 7px;
+        background-color: var(--color-brown);
+        color: whitesmoke;
+        letter-spacing: 1px;
+    }
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(44, 42, 42, 0.788);
+    color: whitesmoke;
+}
+footer ul {
+    list-style-type: none;
+
+}
+footer ul a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+footer .external-links ul li:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+footer .social-links ul li:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+footer .partners span:first-of-type {
+    margin-bottom: 10px;
+}
+footer .partners span {
+    display: block;
+}
+/******************************************************************************************* */
+.border-header-bottom {
+    display: inline-block;
+    height: 5px;
+    width: 100px;
+    border-radius: 3px;
+}
+
+.border-header-bottom-browm {
+    background-color: var(--color-brown);
+}
+
+.border-header-bottom-white {
+    background-color: white;
+}
+.main-heading,
+.secondary-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-heading h2 {
+    margin-bottom: 20px;
+    font-size: 35;
+    font-style: oblique;   
+}
+
+.secondary-header h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-style: oblique;
+}
+.py-10 {
+    padding: 10px 0px;
+}
+.py-20 {
+    padding: 20px 0px;
+}
+.py-30 {
+    padding: 30px 0px;
+}
+.py-40 {
+    padding: 40px 0px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+.d-flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+.w-22 {
+    width: 20%;
+}
+
+/************************************************************************************************************ */
